@@ -35,11 +35,11 @@ def get_japanese_emoticon(path, emoticon)
       end
     end
         binding.pry
- #   if jap_result == nil
- #     "Sorry, that emoticon was not found"
-#   else
- #     jap_result
- #   end
+    if jap_result == nil
+      "Sorry, that emoticon was not found"
+   else
+      jap_result
+    end
 end
 
 
