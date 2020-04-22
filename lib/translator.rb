@@ -30,7 +30,7 @@ def get_japanese_emoticon(path, emoticon)
     end
 #    binding.pry
     jap_emo.each do | kmean, vemo |
-      if [vemo][0] == emoticon
+      if [vemo[0]] == emoticon
         jap_result = "this"
       end
     end
