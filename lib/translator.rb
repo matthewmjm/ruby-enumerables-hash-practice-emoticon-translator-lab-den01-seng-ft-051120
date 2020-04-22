@@ -22,9 +22,9 @@ end
 
 
 def get_japanese_emoticon(path, emoticon)
-  eng_translate = load_library(path)
+  jap_translate = load_library(path)
   result = nil
-  eng_meaning = {}
+  jap_meaning = {}
     eng_translate.each { |mean, value| eng_meaning[mean] = eng_translate[mean][:japanese] }
   eng_meaning.each do | kmean, vemo |
     if vemo == emoticon
