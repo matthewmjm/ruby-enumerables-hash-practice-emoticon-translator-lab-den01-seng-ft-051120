@@ -49,12 +49,11 @@ def get_japanese_emoticon(path, emoticon)
   jap_result = nil
   jap_emo = {}
   japanese = {}
-  english = {}
     jap_translate.each do |meaning, emos| 
       jap_emo[meaning] = [jap_translate[meaning][:english], jap_translate[meaning][:japanese]]
     end
     binding.pry
-    jap_emo.each | meaning, emos|
+    jap_emo.each | meaning, emos |
       japanese[meaning] = 0
     end
 #      english[emos[1]] = meaning
