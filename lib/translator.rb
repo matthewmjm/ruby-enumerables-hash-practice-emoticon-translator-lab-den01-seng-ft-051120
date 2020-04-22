@@ -28,12 +28,13 @@ def get_japanese_emoticon(path, emoticon)
     jap_translate.each do |meaning, emos| 
       jap_emo[meaning] = [jap_translate[meaning][:english], jap_translate[meaning][:japanese]]
     end
-    binding.pry
+#    binding.pry
     jap_emo.each do | kmean, vemo |
       if kmean[vemo[0]] == emoticon
         jap_result = kmean[vemo[1]]
       end
     end
+        binding.pry
  #   if jap_result == nil
  #     "Sorry, that emoticon was not found"
 #   else
