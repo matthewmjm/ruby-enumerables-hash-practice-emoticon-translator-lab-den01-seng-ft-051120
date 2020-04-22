@@ -54,6 +54,7 @@ def get_japanese_emoticon(path, emoticon)
       jap_emo[meaning] = [jap_translate[meaning][:english], jap_translate[meaning][:japanese]]
     end
     jap_emo.each | meaning, emos|
+      english[meaning]
       japanese[emos[0]] = emos[1]
     end
       
