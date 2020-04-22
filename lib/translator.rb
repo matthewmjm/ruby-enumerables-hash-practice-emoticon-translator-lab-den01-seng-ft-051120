@@ -25,7 +25,7 @@ def get_japanese_emoticon(path, emoticon)
   jap_translate = load_library(path)
   jap_result = nil
   jap_emo = {}
-    jap_translate.each { |mean, value| jap_emo[mean][:japanese] = jap_translate[mean][:english] }
+#    jap_translate.each { |mean, value| jap_emo[mean][:japanese] = jap_translate[mean][:english] }
     binding.pry
   jap_emo.each do | kmean, vemo |
     if vemo == emoticon
