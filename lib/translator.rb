@@ -49,20 +49,19 @@ def get_japanese_emoticon(path, emoticon)
   jap_result = nil
   jap_emo = {}
     jap_translate.each do |meaning, emos| 
-      [meaning[:english]] = [meaning][:japanese]
+      jap_emo[meaning[:english]] = [meaning][:japanese]
     end
     binding.pry
-    jap_emo.each do | kmean, vemo |
-      if vemo == emoticon
-        jap_result = "this"
-      end
-    end
-        binding.pry
-    if jap_result == nil
-      "Sorry, that emoticon was not found"
-   else
-      jap_result
-    end
+ #   jap_emo.each do | kmean, vemo |
+ #     if vemo == emoticon
+ #       jap_result = "this"
+ #     end
+ #   end
+ #       binding.pry
+ #     "Sorry, that emoticon was not found"
+  # else
+  #    jap_result
+ #   end
 end
 
 
