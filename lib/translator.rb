@@ -53,7 +53,7 @@ def get_japanese_emoticon(path, emoticon)
       jap_emo[meaning] = [jap_translate[meaning][:english], jap_translate[meaning][:japanese]]
     end
     jap_emo.each do| meaning, emos |
-      japanese[emos[0]] = emos[0]
+      japanese[emos[0]] = emos[1]
     end
     japanese.each do | kemo, vemo |
       if kemo == emoticon
