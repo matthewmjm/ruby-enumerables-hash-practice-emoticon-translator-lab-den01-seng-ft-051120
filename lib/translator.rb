@@ -23,18 +23,18 @@ end
 
 def get_japanese_emoticon(path, emoticon)
   jap_translate = load_library(path)
-  result = nil
+  jap_result = nil
   jap_emo = {}
     jap_translate.each { |mean, value| jap_emo[mean] = jap_translate[mean][:japanese] }
   jap_emo.each do | kmean, vemo |
     if vemo == emoticon
-      result = kmean
+      jap_result = kmean
     end
   end
-    if result == nil
+    if jap_result == nil
       "Sorry, that emoticon was not found"
     else
-      result
+      jap_result
     end
 end
 
