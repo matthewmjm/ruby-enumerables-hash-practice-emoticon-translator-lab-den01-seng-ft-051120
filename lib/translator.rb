@@ -31,7 +31,7 @@ def get_japanese_emoticon(path, emoticon)
 #    binding.pry
     jap_emo.each do | kmean, vemo |
       if jap_emo[kmean][vemo][0] == emoticon
-        jap_result = jap_emo[kmean][vemo][1]
+        jap_result = "this"
       end
     end
         binding.pry
