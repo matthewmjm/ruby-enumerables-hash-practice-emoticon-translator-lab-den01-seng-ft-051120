@@ -64,6 +64,7 @@ def get_japanese_emoticon(path, emoticon)
 #   else
 #      jap_result
 #    end
+binding.pry
 end
 
 
